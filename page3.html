@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        span{
+            border: 1px solid green;
+        }
+    </style>
 </head>
 <body>
     <h1>รายการสินค้า</h1>
-    <table border="1">
+    <table border="1" cellpadding ="10" cellspacing ="10">
         <thead>
             <th>รหัสสินค้า</th>
             <th>ภาพสินค้า</th>
@@ -15,36 +23,40 @@
             <th>ราคา(บาท)</th>
             <th>ดำเนินการ</th>
         </thead>
-        <tbody>
-            <tr>
+        <tbody align="center">
+            <tr bgcolor = "pink">
                 <td>P001</td>
                 <td>
                     <img src="https://cdn.pixabay.com/photo/2016/08/18/20/04/food-1603763_1280.jpg" alt="" width="50px">
                 </td>
-                <td>ส้มตำ</td>
+                <td bgcolor = "red">ส้มตำ</td>
                 <td>150.00</td>
-                <td>
-                    <a href="#">สั่งซื้อ</a>
+                <td rowspan="2">
+                    <a href="#" >สั่งซื้อ</a>
                 </td>
             </tr>
-            <tr>
+            <tr bgcolor = "yellow">
                 <td>P002</td>
                 <td>
                     <img src="https://cdn.pixabay.com/photo/2018/08/30/14/46/food-3642376_1280.jpg" alt="" width="50px">
                 </td>
-                <td>สเต็ก</td>
+                <td bgcolor = "blue">สเต็ก</td>
                 <td>200</td>
-                <td>
-                    <a href="#">สั่งซื้อ</a>
-                </td>
             </tr>
             <tr></tr>
         </tbody>
         <tfoot>
-            <tr>
-                <td>ราคารวม : 500 บาท</td>
+            <tr align="right">
+                <td colspan="5"><b>ราคารวม : 500 บาท</b></td> <!-- มันกินพื้นที่ไป 5 ส่วนแรก -->
             </tr>
         </tfoot>
     </table>
+    <span>Chawakorn</span>
+    <span>Chawakorn</span>
+    <span>Chawakorn</span>
+
+    <div>Pimsarn</div>
+    <div>Pimsarn</div>
+    <div>Pimsarn</div>
 </body>
 </html>
